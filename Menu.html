@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+            gap: 20px; /* Space between columns */
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-column {
+            flex: 1; /* Each column takes equal available space */
+            min-width: 300px; /* Minimum width for each column before wrapping */
+        }
+        .menu-category {
+            margin-bottom: 20px;
+        }
+        .menu-category h2 {
+            background-color: #c0392b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 0;
+        }
+        .menu-item {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .item-name {
+            font-weight: bold;
+        }
+        .item-description {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .item-price {
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-column">
+            <div class="menu-category">
+                <h2>Gluten-Free Pizzas</h2>
+                <div class="menu-item">
+                    <span class="item-name">Cheese</span>
+                    <span class="item-price">$13.99</span></div>
+                <div class="item-description">Cauliflower crust, tomato sauce, mozzarella.</div>
+                
+                <div class="menu-item">
+                    <span class="item-name">Pepperoni</span>
+                    <span class="item-price">$15.99</span>
+                </div>
+                <div class="item-description">Cauliflower crust, tomato sauce, mozzarella, pepperoni.</div>
+                </div>
+
+            <div class="menu-category">
+                <h2>Hearty Pizzas</h2>
+                <div class="menu-item">
+                    <span class="item-name">BBQ Chicken</span>
+                    <span class="item-price">$15.99</span>
+                </div>
+                <div class="item-description">BBQ sauce, mozzarella, grilled chicken, onions.</div>
+                
+                <div class="menu-item">
+                    <span class="item-name">Meat Lovers</span>
+                    <span class="item-price">$17.50</span>
+                </div>
+                <div class="item-description">Tomato sauce, mozzarella, pepperoni, hamburger, Canadian bacon.</div>
+            </div>
+        </div>
+
+        <div class="menu-column">
+            <div class="menu-category">
+                <h2>Vegetarian</h2>
+                <div class="menu-item">
+                    <span class="item-name">Margherita</span>
+                    <span class="item-price">$15.99</span>
+                </div>
+                <div class="item-description">Tomato sauce, mozzarella, basil.</div>
+                
+                <div class="menu-item">
+                    <span class="item-name">Veggie Supreme</span>
+                    <span class="item-price">$15.25</span>
+                </div>
+                <div class="item-description">Tomato sauce, mozzerella, onions, bellpepper, mushrooms, olives.</div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Just the Basics</h2>
+                <div class="menu-item">
+                    <span class="item-name">Cheese</span>
+                    <span class="item-price">$12.50</span>
+                </div>
+                <div class="item-description">Tomato sauce, mozzarella. </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">Pepperoni</span>
+                    <span class="item-price">$13.50</span>
+                    </div>
+                <div class="item-description">Tomato sauce, mozzarella. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
